@@ -1,3 +1,6 @@
 ---
 - name: Install ansible
   include_tasks: install.yml
+
+- name: Setup ansible-autocomplete
+  include_tasks: autocomplete.yml
