@@ -7,6 +7,13 @@
   become: yes
 
 - name: Install Ansible
+  apt:
+    name: [ "ansible" ]
+    state: present
+    update_cache: no
+  become: yes
+
+- name: Install Ansible
   pip:
     name: 
       - ansible
@@ -14,10 +21,3 @@
       - PyYAML
       - netaddr
     executable: pip3
-
-- name: Install Ansible
-  apt:
-    name: [ "ansible" ]
-    state: present
-    update_cache: no
-  become: yes
