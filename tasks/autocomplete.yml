@@ -1,6 +1,6 @@
 ---
 
-- name: Download file and force basic auth
+- name: Install bash-completion for ansible
   get_url:
     url: https://raw.githubusercontent.com/dysosmus/ansible-completion/master/{{ item }}
     dest: /etc/bash_completion.d/{{ item }}
